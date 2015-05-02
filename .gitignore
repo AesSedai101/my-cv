@@ -11,3 +11,4 @@
 ~*
 *.ps
 *.out
+.DS_Store
