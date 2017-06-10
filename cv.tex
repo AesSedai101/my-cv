@@ -6,11 +6,11 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -26,7 +26,7 @@
 % personal data
 \firstname{Elsab\'{e}}
 \familyname{Ros}
-%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
 %\address{Insert}{Address}    % optional, remove the line if not wanted
 \mobile{Insert cell number}                     % optional, remove the line if 
 %not wanted
@@ -34,12 +34,10 @@
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{hello@elsabe.dev}                          % optional, remove the line 
 %if 
-%not wanted
 \homepage{elsabe.dev}                    % optional, remove the line if not 
 %wanted
-%\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{pic.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
-%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+%\quote{Fight me}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -58,18 +56,18 @@
 \makecvtitle
 
 \section{Experience}
-\cventry{2011}{Teaching Assisstant}{University of Pretoria}{}{}{Assisting in practicals for first-year programming courses}%
-\cventry{2012}{Tutor}{University of Pretoria}{}{}{Assisting in practicals, marking and mentoring struggling students \newline{}}%
-\cventry{2013--2015}{Software Engineer}{Entelect}{}{}{}%
 \cventry{2015--2017}{Senior Software Engineer}{Entelect}{}{}{}%
-
-\subsection{Projects}
+\cventry{2013--2015}{Software Engineer}{Entelect}{}{}{ \newline{}}%
+\subsection{Projects at Entelect}
 \cventry{}{Vitality Service Portal}{2013}{}{}{\textit{Web development (Spring)} \newline{} I worked as a member of a team that developed an internal web-based application for use by the client's servicing agents.\newline{}
 \textit{HTML, CSS, Javascript, Spring, Java, Maven, Git} \newline{}}
 
 \cventry{}{DPM Mobile application}{2013-2015}{}{}{\textit{Android development} \newline{} I was a member of the team that worked on the mobile application for Discovery Partner Markets. This project involved developing new features, reducing existing technical debt and liasing with developers in other locations to release the app into multiple regions, including Singapore, Australia and Thailand.\newline{} \textit{Android, Maven, Sonar, Jenkins, JIRA, Git} \newline{}}
 
 \cventry{}{Discovery Mobile app}{2015-2017}{}{}{\textit{Android development, Backend development (Spring)} \newline{} On this project, we implement new features for the Discovery member app in South Africa, as well as reducing existing technical debt. As part of this project, I also design RESTful microservices and implement them in Spring. Another part I play in this project is supporting and helping junior developers.\newline{} \textit{Android, Gradle, Spring, Spring Boot, RAML, Maven, Sonar, Bamboo, JIRA, Git} \newline{}}
+
+\cventry{2012}{Tutor}{University of Pretoria}{}{}{}%
+\cventry{2011}{Teaching Assisstant}{University of Pretoria}{}{}{}%
 
 %
 %\begin{itemize}%
@@ -93,18 +91,25 @@
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Courses and certifications}
-\cventry{Nov 2016}{Certified Spring Professional}{Pivotal}{}{\textit{}}{}
+\cventry{November 2016}{Certified Spring Professional}{Pivotal}{}{\textit{}}{}
 \cventry{May 2015}{Hardware Security}{Coursera}{}{\textit{}}{Verified Certificate}
 \cventry{April 2015}{Cryptography}{Coursera}{}{\textit{}}{Verified Certificate}
 \cventry{April 2015}{Software Security}{Coursera}{}{\textit{}}{Verified Certificate}
 \cventry{March 2015}{Usable Security}{Coursera}{}{\textit{}}{Verified Certificate}
+\cventry{June 2012}{Applied Cryptography}{Udacity}{}{\textit{}}{}
+\cventry{December 2011}{Introduction to Artificial Intelligence}{Udacity}{}{\textit{}}{}
 
 \section{Education}
-\cventry{2010--2012}{BIS: Multimedia}{University of Pretoria}{}{\textit{Cum Laude}}{}  % arguments 3 to 6 can be left empty
-\cventry{2013--2014}{BSc (Hons) Computer Science}{University of Pretoria}{}{\textit{}}{\textit{An information-gathering botnet for private cloud environments} \newline{} Organisations implementing a private cloud can run into problems related to misuse of resources, as well as various other
-		issues. These problems are an issue because it is hard to gather information from the cloud environments. To mitigate these problems, the organisation must be able to monitor cloud usage closely, without interfering with employees’ productivity. Using a botnet, traditionally considered malware, to gather data and report it to a central point for analysis, means that employees need not even be aware of the tool. Using a botnet instead of traditional information gathering tools has several advantages,
-		but comes with its own set of disadvantages too. A botnet with a central server that collects data allows for big data analysis and easy maintenance of the botnet. \newline{}}
-\cventry{2016--}{MSc Computer Science}{University of Pretoria}{}{\textit{}}{ongoing}
+\cventry{2016--}{MSc Computer Science}{University of Pretoria}{}{\textit{}}{Ongoing}
+
+\cventry{2013--2014}{BSc (Hons) Computer Science}{University of Pretoria}{}{\textit{}}{\textit{Dissertation: }An information-gathering botnet for private cloud environments}
+	
+\cventry{2010--2012}{BIS: Multimedia}{University of Pretoria}{}{\textit{Cum Laude}}{  % arguments 3 to 6 can be left empty
+\begin{itemize}%
+\item Golden Key Honour Society
+\item Top 3 Multimedia students 2nd year
+\end{itemize}
+}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
