@@ -56,12 +56,14 @@
 \makecvtitle
 
 \section{Experience}
-\cventry{2017--Current}{Senior Software Developer}{Dariel}{}{}{}%
-
+\cventry{2018--Current}{Senior Developer}{Discovery Holdings}{}{}{}%
+\cventry{2017--2018}{Senior Software Developer}{Dariel}{}{}{}%
 \subsection{Projects at Dariel}
-\cventry{}{Oct 2017-Current}{ABSA - PDLC}{}{}{\textit{Web development (Spring)} \newline{} I worked on a project to streamline the creation of new projects. This tool integrates with the Atlassian stack and various other tools to enable project managers to create project spaces and quickly add and remove team members from their projects. The tools also allow developers to set up source code management and CI pipelines using templates. \newline{}
+\cventry{}{Jun 2018}{ABSA - IRIS}{}{}{\textit{B2B (Spring)} \newline{} A project to facilitate communication with bank customers. \newline{}
+\textit{Spring, Java, Maven, Git, Jasper template engine} \newline{}}
+\cventry{}{Oct 2017-May 2018}{ABSA - PDLC}{}{}{\textit{Web development (Spring)} \newline{} A project to streamline the creation of new projects. This tool integrates with the Atlassian stack and various other tools to enable project managers to create project spaces and quickly add and remove team members from their projects. The tools also allow developers to set up source code management and CI pipelines using templates. \newline{}
 \textit{HTML, CSS, Spring, Java, Maven, Git, Angular, Bamboo, Bitbucket, Confluence, JIRA, TFS, Sonarqube, Nexus} \newline{}}
-\cventry{}{Apr 2018-Current}{Graduate app}{}{}{\textit{Progressive Web app (Polymer)} \newline{} I built a progressive web application to allow my employer to interact with prospective graduate employees. This tool allows graduates to sign up for competitions, chat with the HR team and view a gallery of images. I also built the corresponding admin application. \newline{}
+\cventry{}{Apr 2018-Jun 2018}{Graduate app}{}{}{\textit{Progressive Web app (Polymer)} \newline{} A progressive web application to allow my employer to interact with prospective graduate employees. This tool allows graduates to sign up for competitions, chat with the HR team and view a gallery of images. I also built the corresponding admin application. \newline{}
 \textit{Firebase, Javascript, Polymer 2.0, HTML, CSS, Javascript, Git, Google Cloud Functions} \newline{}}
 
 \noindent\hfil\rule{0.5\textwidth}{.4pt}\hfil\newline
@@ -103,8 +105,10 @@
 %\subsection{Miscellaneous}
 %\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
-\section{Courses and certifications}
+\section{Certifications}
 \cventry{November 2016}{Certified Spring Professional}{Pivotal}{}{\textit{}}{}
+
+\section{Courses}
 \cventry{May 2015}{Hardware Security}{Coursera}{}{\textit{}}{Verified Certificate}
 \cventry{April 2015}{Cryptography}{Coursera}{}{\textit{}}{Verified Certificate}
 \cventry{April 2015}{Software Security}{Coursera}{}{\textit{}}{Verified Certificate}
@@ -112,26 +116,40 @@
 \cventry{June 2012}{Applied Cryptography}{Udacity}{}{\textit{}}{}
 \cventry{December 2011}{Introduction to Artificial Intelligence}{Udacity}{}{\textit{}}{}
 
-\section{Education}
+\section{Formal Education}
 \cventry{2016--}{MSc Computer Science}{University of Pretoria}{}{\textit{}}{Ongoing}
 
 \cventry{2013--2014}{BSc (Hons) Computer Science}{University of Pretoria}{}{\textit{}}{\textit{Dissertation: }An information-gathering botnet for private cloud environments}
 	
-\cventry{2010--2012}{BIS: Multimedia}{University of Pretoria}{}{\textit{Cum Laude}}{  % arguments 3 to 6 can be left empty
-\begin{itemize}%
-\item Golden Key Honour Society
-\end{itemize}
-}
-
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+\cventry{2010--2012}{BIS: Multimedia}{University of Pretoria}{}{\textit{Cum Laude}}{}
 
 \section{Languages}
 \cvitemwithcomment{English}{Professional}{}
 \cvitemwithcomment{Afrikaans}{Home language}{}
 \cvitemwithcomment{Dutch}{Elementary}{}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\section{Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
 
 %\section{Computer skills}
 %\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
@@ -148,26 +166,10 @@
 %\cvlistitem{Item 2}
 %\cvlistitem{Item 3}
 
-\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
-
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{}
-
-% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-\nocite{*}
-\bibliographystyle{plain}
-%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
 
 \clearpage
 %-----       letter       ---------------------------------------------------------
